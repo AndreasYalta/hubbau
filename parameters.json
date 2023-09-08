@@ -32,6 +32,9 @@
         "capacity": {
             "value": 1
         },
+        "tenantId": {
+            "value": "0ef6ab0c-c18f-430c-ab5b-8eacfd69402c" 
+        },
         "repositoryUrl": {
             "value": "https://github.com/AndreasYalta/hubbau"
         },

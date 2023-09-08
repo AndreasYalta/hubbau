@@ -1,11 +1,11 @@
 targetScope = 'resourceGroup'
 
 // Common params
-
+param tenantId string
 param location string = resourceGroup().location
 param resourcePrefix string
 param tags object
-param keyVaultName string
+param keyVaultName string = '${resourcePrefix}${uniqueString(tenantId)}kv'
 
 // 3. ACR
 
