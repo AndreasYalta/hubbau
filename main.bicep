@@ -5,7 +5,7 @@ param tenantId string
 param location string = resourceGroup().location
 param resourcePrefix string
 param tags object
-param keyVaultName string = '${resourcePrefix}${uniqueString(tenantId)}kv'
+param keyVaultName string = '${resourcePrefix}${uniqueString(tenantId)}kva'
 
 // 3. ACR
 
