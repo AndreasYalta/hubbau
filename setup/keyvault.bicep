@@ -4,7 +4,6 @@ param tags object
 param dbuser string
 @secure()
 param dbpassword string
-param token string
 param tenantId string
 param objectId string
 
@@ -58,18 +57,5 @@ resource password 'Microsoft.KeyVault/vaults/secrets@2022-07-01' = {
       nbf: 30
     }
     value: dbpassword
-  }
-}
-
-resource ghtoken 'Microsoft.KeyVault/vaults/secrets@2022-07-01' = {
-  name: 'token'
-  parent: keyVault
-  properties: {
-    attributes: {
-      enabled: true
-      exp: 30
-      nbf: 30
-    }
-    value: token
   }
 }

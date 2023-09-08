@@ -82,7 +82,6 @@ module staticSite 'modules/staticsite.bicep' = {
     staticSiteName: staticSiteName
     location: location
     tags: tags
-    repositoryToken: kv.getSecret('token')
     repositoryUrl: repositoryUrl
     branch: branch
   }

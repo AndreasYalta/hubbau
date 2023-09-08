@@ -36,6 +36,5 @@ module keyVault './keyvault.bicep' = {
     objectId: objectId
     dbuser: dbuser
     dbpassword: dbpassword
-    token: token
   }
 }
