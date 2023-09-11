@@ -75,14 +75,3 @@ module webApp 'modules/webapp.bicep' = {
     postgresPassword: kv.getSecret('dbpassword')
   }
 }
-
-module staticSite 'modules/staticsite.bicep' = {
-  name: 'staticSite'
-  params: {
-    staticSiteName: staticSiteName
-    location: location
-    tags: tags
-    repositoryUrl: repositoryUrl
-    branch: branch
-  }
-}
